@@ -72,28 +72,28 @@ window.__TRAINING__ = [
       "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Squat_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-front-rack-squat-side.mp4"
     },
     {
       "name": "Abdução de Quadril Máquina",
       "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Abduction_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-machine-hip-abduction-front.mp4"
     },
     {
       "name": "Elíptico",
       "series": "25 reps",
       "load": "0 kg",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Elliptical_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-elliptical-side.mp4"
     },
     {
       "name": "Afundo com Barra Livre",
       "series": "3x12, 3x10, 2x8",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/barbell/_1080/Barbell_Reverse_Lunge_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-barbell-reverse-lunge-side.mp4"
     },
     {
       "name": "Agachamento Sumô no Step com Halteres",
@@ -114,7 +114,7 @@ window.__TRAINING__ = [
       "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Extension_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-machine-leg-extension-side.mp4"
     },
     {
       "name": "Cadeira Extensora Unilateral",
@@ -141,14 +141,14 @@ window.__TRAINING__ = [
       "series": "3x20",
       "load": "0 kg",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Triceps_Stretch_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-shoulders-stretch-variation-1-front.mp4"
     },
     {
       "name": "Bike Spinning Sentada",
       "series": "40 reps",
       "load": "-",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Spin_Bike_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-stationary-bike-side.mp4"
     },
     {
       "name": "Abdominal Supra Solo",
@@ -162,56 +162,56 @@ window.__TRAINING__ = [
       "series": "3x15",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Single_Arm_Tricep_Pushdown_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cables-cable-single-arm-rope-pushdown-side.mp4"
     },
     {
       "name": "Alongamento de Peitoral no Espaldar",
       "series": "3x15",
       "load": "0 kg",
       "rest": "40s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Chest_Doorway_Stretch_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-chest-stretch-variation-1-side.mp4"
     },
     {
       "name": "Mobilidade de Ombro III",
       "series": "3x20",
       "load": "0 kg",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Shoulder_Circles_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Recovery-thoracic-extensions-via-shoulder-flexion-foam-roller-front.mp4"
     },
     {
       "name": "Rosca Alternada com Halteres",
       "series": "3x15",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Alternating_Curl_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-curl-side.mp4"
     },
     {
       "name": "Tríceps na Polia com Corda (lento + curto)",
       "series": "3x15 lento + 15 curto",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Tricep_Pushdown_Rope_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cables-cable-push-down-side.mp4"
     },
     {
       "name": "Crucifixo com Halteres",
       "series": "4x12",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Fly_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-incline-chest-fly-front.mp4"
     },
     {
       "name": "Crucifixo Inclinado com Halteres",
       "series": "4x12",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Incline_Dumbbell_Fly_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-incline-chest-flys-side.mp4"
     },
     {
       "name": "Rosca Martelo com Halteres",
       "series": "4x12",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Hammer_Curl_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-hammer-curl-side.mp4"
     }
   ]
 },
@@ -238,21 +238,21 @@ window.__TRAINING__ = [
       "series": "40 reps",
       "load": "-",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-treadmill-walk-side.mp4"
     },
     {
       "name": "Elevação Lateral Unilateral Sentado com Halteres",
       "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Seated_Lateral_Raise_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-seated-overhead-press-front.mp4"
     },
     {
       "name": "Elevação Frontal Alternada",
       "series": "3x12",
       "load": "4 a 6 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Front_Raise_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-front-raise-side.mp4"
     },
     {
       "name": "Desenvolvimento com Halteres (pegada neutra)",
@@ -273,14 +273,14 @@ window.__TRAINING__ = [
       "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-machine-seated-cable-row-front.mp4"
     },
     {
       "name": "Puxada Aberta Barra Reta",
       "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Wide_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-machine-pulldown-side.mp4"
     }
   ]
 }
