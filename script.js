@@ -155,7 +155,7 @@ window.__TRAINING__ = [
       "series": "5x15",
       "load": "0 kg",
       "rest": "40s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Crunch_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-bodyweight-crunch-side.mp4"
     },
     {
       "name": "Tríceps Unilateral na Polia Alta (Pegada Neutra)",
@@ -220,11 +220,11 @@ window.__TRAINING__ = [
   "title": "Treino de Ombro e Costas",
   "items": [
     {
-      "name": "Puxada Alta (pegada neutra)",
+      "name": "Desenvolvimento com halteres (pegada neutra)",
       "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Neutral_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-neutral-overhead-press-side.mp4"
     },
     {
       "name": "Abdominal Canivete",
