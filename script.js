@@ -24,14 +24,14 @@ window.__TRAINING__ = [
       "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Adduction_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-machine-hip-adduction-front.mp4"
     },
     {
       "name": "Cadeira Flexora",
       "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Curl_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-seated-leg-curl-side.mp4"
     },
     {
       "name": "Cadeira Flexora Unilateral",
@@ -45,21 +45,21 @@ window.__TRAINING__ = [
       "series": "4x15",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Standing_Calf_Raise_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-calves-stretch-variation-3-side.mp4"
     },
     {
       "name": "Abdominal Canivete",
       "series": "4x15",
       "load": "0 kg",
       "rest": "30s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-suitcase-crunch-side.mp4"
     },
     {
       "name": "Esteira Caminhada",
       "series": "30 reps",
       "load": "-",
       "rest": "-",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-treadmill-walk-side.mp4"
     }
   ]
 },
