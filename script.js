@@ -1,6 +1,290 @@
 
 // DATA
-window.__TRAINING__ = [{"title": "Treino de Quadríceps", "items": [{"name": "Agachamento Sumô com Halteres", "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"}, {"name": "Leg Press 45º", "series": "4x15 (pés colados) + 15 (afastados)", "load": "12 kg", "rest": "40s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"}, {"name": "Adução de Quadril Máquina", "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Adduction_FR_1080.mp4"}, {"name": "Cadeira Flexora", "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Curl_FR_1080.mp4"}, {"name": "Cadeira Flexora Unilateral", "series": "3x10/10/10/10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Seated_Leg_Curl_FR_1080.mp4"}, {"name": "Panturrilha no Step", "series": "4x15", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Standing_Calf_Raise_FR_1080.mp4"}, {"name": "Abdominal Canivete", "series": "4x15", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"}, {"name": "Esteira Caminhada", "series": "30 reps", "load": "-", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"}]}, {"title": "Treino de Posterior e Glúteo", "items": [{"name": "Agachamento com Halteres", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Squat_FR_1080.mp4"}, {"name": "Abdução de Quadril Máquina", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Abduction_FR_1080.mp4"}, {"name": "Elíptico", "series": "25 reps", "load": "0 kg", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Elliptical_FR_1080.mp4"}, {"name": "Afundo com Barra Livre", "series": "3x12, 3x10, 2x8", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/barbell/_1080/Barbell_Reverse_Lunge_FR_1080.mp4"}, {"name": "Agachamento Sumô no Step com Halteres", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"}, {"name": "Abdução de Quadril Máquina (2ª vez)", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Abduction_FR_1080.mp4"}, {"name": "Cadeira Extensora", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Extension_FR_1080.mp4"}, {"name": "Cadeira Extensora Unilateral", "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Single_Leg_Extension_FR_1080.mp4"}, {"name": "Leg Press 45º Unilateral", "series": "3x12, 3x10, 2x8", "load": "0 kg", "rest": "60s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"}]}, {"title": "Treino de Peito, Tríceps e Bíceps", "items": [{"name": "Alongamento de Ombros e Tríceps II", "series": "3x20", "load": "0 kg", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Triceps_Stretch_FR_1080.mp4"}, {"name": "Bike Spinning Sentada", "series": "40 reps", "load": "-", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Spin_Bike_FR_1080.mp4"}, {"name": "Abdominal Supra Solo", "series": "5x15", "load": "0 kg", "rest": "40s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Crunch_FR_1080.mp4"}, {"name": "Tríceps Unilateral na Polia Alta (Pegada Neutra)", "series": "3x15", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Single_Arm_Tricep_Pushdown_FR_1080.mp4"}, {"name": "Alongamento de Peitoral no Espaldar", "series": "3x15", "load": "0 kg", "rest": "40s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Chest_Doorway_Stretch_FR_1080.mp4"}, {"name": "Mobilidade de Ombro III", "series": "3x20", "load": "0 kg", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Shoulder_Circles_FR_1080.mp4"}, {"name": "Rosca Alternada com Halteres", "series": "3x15", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Alternating_Curl_FR_1080.mp4"}, {"name": "Tríceps na Polia com Corda (lento + curto)", "series": "3x15 lento + 15 curto", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Tricep_Pushdown_Rope_FR_1080.mp4"}, {"name": "Crucifixo com Halteres", "series": "4x12", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Fly_FR_1080.mp4"}, {"name": "Crucifixo Inclinado com Halteres", "series": "4x12", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Incline_Dumbbell_Fly_FR_1080.mp4"}, {"name": "Rosca Martelo com Halteres", "series": "4x12", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Hammer_Curl_FR_1080.mp4"}]}, {"title": "Treino de Ombro e Costas", "items": [{"name": "Puxada Alta (pegada neutra)", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Neutral_FR_1080.mp4"}, {"name": "Abdominal Canivete", "series": "3x12", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"}, {"name": "Esteira Caminhada", "series": "40 reps", "load": "-", "rest": "-", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"}, {"name": "Elevação Lateral Unilateral Sentado com Halteres", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Seated_Lateral_Raise_FR_1080.mp4"}, {"name": "Elevação Frontal Alternada", "series": "3x12", "load": "4 a 6 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Front_Raise_FR_1080.mp4"}, {"name": "Desenvolvimento com Halteres (pegada neutra)", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Neutral_Grip_DB_Press_FR_1080.mp4"}, {"name": "Puxada Neutra Triângulo", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"}, {"name": "Remada Baixa Triângulo", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"}, {"name": "Puxada Aberta Barra Reta", "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)", "load": "0 kg", "rest": "30s", "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Wide_FR_1080.mp4"}]}];
+window.__TRAINING__ = [
+// ===== TREINO DE QUADRÍCEPS =====
+{
+  "title": "Treino de Quadríceps",
+  "items": [
+    {
+      "name": "Agachamento Sumô com Halteres",
+      "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"
+    },
+    {
+      "name": "Leg Press 45º",
+      "series": "4x15 (pés colados) + 15 (afastados)",
+      "load": "12 kg",
+      "rest": "40s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"
+    },
+    {
+      "name": "Adução de Quadril Máquina",
+      "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Adduction_FR_1080.mp4"
+    },
+    {
+      "name": "Cadeira Flexora",
+      "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Curl_FR_1080.mp4"
+    },
+    {
+      "name": "Cadeira Flexora Unilateral",
+      "series": "3x10/10/10/10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Seated_Leg_Curl_FR_1080.mp4"
+    },
+    {
+      "name": "Panturrilha no Step",
+      "series": "4x15",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Standing_Calf_Raise_FR_1080.mp4"
+    },
+    {
+      "name": "Abdominal Canivete",
+      "series": "4x15",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"
+    },
+    {
+      "name": "Esteira Caminhada",
+      "series": "30 reps",
+      "load": "-",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"
+    }
+  ]
+},
+// ===== TREINO DE POSTERIOR E GLÚTEO =====
+{
+  "title": "Treino de Posterior e Glúteo",
+  "items": [
+    {
+      "name": "Agachamento com Halteres",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Squat_FR_1080.mp4"
+    },
+    {
+      "name": "Abdução de Quadril Máquina",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Abduction_FR_1080.mp4"
+    },
+    {
+      "name": "Elíptico",
+      "series": "25 reps",
+      "load": "0 kg",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Elliptical_FR_1080.mp4"
+    },
+    {
+      "name": "Afundo com Barra Livre",
+      "series": "3x12, 3x10, 2x8",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/barbell/_1080/Barbell_Reverse_Lunge_FR_1080.mp4"
+    },
+    {
+      "name": "Agachamento Sumô no Step com Halteres",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"
+    },
+    {
+      "name": "Abdução de Quadril Máquina (2ª vez)",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Hip_Abduction_FR_1080.mp4"
+    },
+    {
+      "name": "Cadeira Extensora",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Extension_FR_1080.mp4"
+    },
+    {
+      "name": "Cadeira Extensora Unilateral",
+      "series": "3x10+10+10 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Single_Leg_Extension_FR_1080.mp4"
+    },
+    {
+      "name": "Leg Press 45º Unilateral",
+      "series": "3x12, 3x10, 2x8",
+      "load": "0 kg",
+      "rest": "60s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"
+    }
+  ]
+},
+// ===== TREINO DE PEITO, TRÍCEPS E BÍCEPS =====
+{
+  "title": "Treino de Peito, Tríceps e Bíceps",
+  "items": [
+    {
+      "name": "Alongamento de Ombros e Tríceps II",
+      "series": "3x20",
+      "load": "0 kg",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Triceps_Stretch_FR_1080.mp4"
+    },
+    {
+      "name": "Bike Spinning Sentada",
+      "series": "40 reps",
+      "load": "-",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Spin_Bike_FR_1080.mp4"
+    },
+    {
+      "name": "Abdominal Supra Solo",
+      "series": "5x15",
+      "load": "0 kg",
+      "rest": "40s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Crunch_FR_1080.mp4"
+    },
+    {
+      "name": "Tríceps Unilateral na Polia Alta (Pegada Neutra)",
+      "series": "3x15",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Single_Arm_Tricep_Pushdown_FR_1080.mp4"
+    },
+    {
+      "name": "Alongamento de Peitoral no Espaldar",
+      "series": "3x15",
+      "load": "0 kg",
+      "rest": "40s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Chest_Doorway_Stretch_FR_1080.mp4"
+    },
+    {
+      "name": "Mobilidade de Ombro III",
+      "series": "3x20",
+      "load": "0 kg",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/stretching/_1080/Shoulder_Circles_FR_1080.mp4"
+    },
+    {
+      "name": "Rosca Alternada com Halteres",
+      "series": "3x15",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Alternating_Curl_FR_1080.mp4"
+    },
+    {
+      "name": "Tríceps na Polia com Corda (lento + curto)",
+      "series": "3x15 lento + 15 curto",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Tricep_Pushdown_Rope_FR_1080.mp4"
+    },
+    {
+      "name": "Crucifixo com Halteres",
+      "series": "4x12",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Dumbbell_Fly_FR_1080.mp4"
+    },
+    {
+      "name": "Crucifixo Inclinado com Halteres",
+      "series": "4x12",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Incline_Dumbbell_Fly_FR_1080.mp4"
+    },
+    {
+      "name": "Rosca Martelo com Halteres",
+      "series": "4x12",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Hammer_Curl_FR_1080.mp4"
+    }
+  ]
+},
+// ===== TREINO DE OMBRO E COSTAS =====
+{
+  "title": "Treino de Ombro e Costas",
+  "items": [
+    {
+      "name": "Puxada Alta (pegada neutra)",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Neutral_FR_1080.mp4"
+    },
+    {
+      "name": "Abdominal Canivete",
+      "series": "3x12",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"
+    },
+    {
+      "name": "Esteira Caminhada",
+      "series": "40 reps",
+      "load": "-",
+      "rest": "-",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cardio/_1080/Treadmill_Walk_FR_1080.mp4"
+    },
+    {
+      "name": "Elevação Lateral Unilateral Sentado com Halteres",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Seated_Lateral_Raise_FR_1080.mp4"
+    },
+    {
+      "name": "Elevação Frontal Alternada",
+      "series": "3x12",
+      "load": "4 a 6 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Front_Raise_FR_1080.mp4"
+    },
+    {
+      "name": "Desenvolvimento com Halteres (pegada neutra)",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Neutral_Grip_DB_Press_FR_1080.mp4"
+    },
+    {
+      "name": "Puxada Neutra Triângulo",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"
+    },
+    {
+      "name": "Remada Baixa Triângulo",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"
+    },
+    {
+      "name": "Puxada Aberta Barra Reta",
+      "series": "3x10/8/6 (Drop – faz tudo e conta como 1 série)",
+      "load": "0 kg",
+      "rest": "30s",
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Lat_Pulldown_Wide_FR_1080.mp4"
+    }
+  ]
+}
+];
 
 // Render
 const app = document.getElementById('app');
