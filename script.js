@@ -10,14 +10,14 @@ window.__TRAINING__ = [
       "series": "3x10/10/10 (Drop – faz tudo e conta como 1 série)",
       "load": "0 kg",
       "rest": "60s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-sumo-squat-front.mp4"
     },
     {
       "name": "Leg Press 45º",
       "series": "4x15 (pés colados) + 15 (afastados)",
       "load": "12 kg",
       "rest": "40s",
-      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"
+      "demo": "https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-leg-press-front.mp4"
     },
     {
       "name": "Adução de Quadril Máquina",
