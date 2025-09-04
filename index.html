@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Treinos — Personal v8</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- TOPO -->
+  <header class="app-header">
+    <div class="brand-wrap">
+      <button class="avatar-btn" id="avatarBtn" title="Alterar foto de perfil">
+        <img id="avatarImg" alt="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"/>
+        <input id="avatarInput" type="file" accept="image/*" hidden>
+      </button>
+      <div class="brand-title">
+        <strong>PERSONAL</strong>
+        <small>Treinos</small>
+      </div>
+    </div>
+    <nav class="top-actions">
+      <!-- Histórico (calendário) -->
+      <button id="historyBtn" class="icon-btn" aria-label="Histórico semanal" title="Histórico semanal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M8 2v4M16 2v4M3 9h18" stroke="currentColor" stroke-width="1.7" />
+        </svg>
+      </button>
+      <!-- Reset -->
+      <button id="resetBtn" class="icon-btn" aria-label="Zerar progresso" title="Zerar progresso">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 12a8 8 0 1 1-2.34-5.66L20 8M20 8V4h-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD / RESUMO -->
+  <section class="dash">
+    <div class="stat-card">
+      <div class="stat-head">
+        <h3>Resumo semanal</h3>
+        <button id="editGoal" class="link">Meta: <span id="goalVal">25</span></button>
+      </div>
+      <div class="week-grid" id="weekGrid"></div>
+      <div class="mini-stats">
+        <div><small>Dias ativos</small><strong id="daysActive">0</strong></div>
+        <div><small>Melhor dia</small><strong id="bestDay">—</strong></div>
+        <div><small>Total</small><strong id="totalDone">0</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTÊNCIA MINIMALISTA (toast) -->
+  <div id="assistantTip" class="assistant-tip"></div>
+
+  <!-- SEÇÕES -->
+  <main class="container" id="sectionsContainer">
+    <!-- Posterior & Glúteo -->
+    <section class="section sec-blue open">
+      <button class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="badge">Treino</span>Posterior & Glúteo</div>
+        <span class="toggle">+</span>
+      </button>
+      <div class="section-body">
+        <div class="grid">
+          <article class="card" data-int="60">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Agachamento Sumô com Halteres</h5>
+            <div class="meta">Séries: 3x10/10/10 • Carga: 0kg • Intervalo: 60s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-sumo-squat-front.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="40">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Leg Press 45</h5>
+            <div class="meta">Série: 4x15 (pés colados) + 15 (afastados) • Carga: 12kg • Intervalo: 40s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-leg-press-front.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="60">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Adução de Quadril Máquina</h5>
+            <div class="meta">Série: 3x10/10/10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-machine-hip-adduction-front.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="60">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Cadeira Flexora</h5>
+            <div class="meta">Séries: 3x10/10/10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-seated-leg-curl-side.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="60">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Cadeira Flexora Unilateral</h5>
+            <div class="meta">Série: 3x10/10/10/10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Seated_Leg_Curl_FR_1080.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="30">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Panturrilha no Step</h5>
+            <div class="meta">Série: 4x15 • Carga: 0kg • Intervalo: 30s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-calves-stretch-variation-3-side.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="30">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Abdominal Canivete</h5>
+            <div class="meta">Série: 4x15 • Carga: 0kg • Intervalo: 30s</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/V-Up_FR_1080.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+
+          <article class="card" data-int="30">
+            <button class="check" onclick="toggleDone(event,this)">✔</button>
+            <h5>Esteira Caminhada</h5>
+            <div class="meta">Série: 30 reps</div>
+            <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-treadmill-walk-side.mp4"></video>
+            <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quadríceps -->
+    <section class="section sec-green">
+      <button class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="badge">Treino</span>Quadríceps</div>
+        <span class="toggle">+</span>
+      </button>
+      <div class="section-body"><div class="grid">
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Agachamento com Halteres</h5>
+          <div class="meta">Série: 3x10+10+10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-front-rack-squat-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Abdução de Quadril Máquina</h5>
+          <div class="meta">Séries: 3x10+10+10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Machine-machine-hip-abduction-front.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Elíptico</h5>
+          <div class="meta">Séries: 25 reps</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-elliptical-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Afundo com Barra Livre</h5>
+          <div class="meta">Séries: 3x12 • 3x10 • 2x8 • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-barbell-reverse-lunge-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Agachamento Sumô no Step com Halteres</h5>
+          <div class="meta">Séries: 3x10+10+10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/DB_Sumo_Squat_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Cadeira Extensora</h5>
+          <div class="meta">Séries: 3x10+10+10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-machine-leg-extension-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Cadeira Extensora Unilateral</h5>
+          <div class="meta">Séries: 3x10+10+10 (Drop) • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Single_Leg_Extension_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="60">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Leg Press 45 Unilateral</h5>
+          <div class="meta">Séries: 3x12 • 3x10 • 2x8 • Carga: 0kg • Intervalo: 60s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/machines/_1080/Leg_Press_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+      </div></div>
+    </section>
+
+    <!-- Peito, Tríceps e Bíceps -->
+    <section class="section sec-pink">
+      <button class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="badge">Treino</span>Peito, tríceps e bíceps</div>
+        <span class="toggle">+</span>
+      </button>
+      <div class="section-body"><div class="grid">
+
+        <article class="card" data-int="40">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Alongamento de Ombros e Tríceps II</h5>
+          <div class="meta">Séries: 3x20 • Carga: 0kg</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-shoulders-stretch-variation-1-front.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Bike Spinning Sentada</h5>
+          <div class="meta">Séries: 40 reps</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-stationary-bike-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="40">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Abdominal Supra Solo</h5>
+          <div class="meta">Séries: 5x15 • Carga: 0kg • Intervalo: 40s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/bodyweight/_1080/Crunch_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Tríceps Unilateral na Polia Alta (Pegada Neutra)</h5>
+          <div class="meta">Séries: 3x15 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cables-cable-single-arm-rope-pushdown-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="40">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Alongamento de Peitoral no Espaldar</h5>
+          <div class="meta">Séries: 3x15 • Carga: 0kg • Intervalo: 40s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-chest-stretch-variation-1-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="40">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Mobilidade de Ombro III</h5>
+          <div class="meta">Série: 3x20 • Carga: 0kg</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Recovery-thoracic-extensions-via-shoulder-flexion-foam-roller-front.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Rosca Alternada com Halteres</h5>
+          <div class="meta">Séries: 3x15 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-curl-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Tríceps na Polia com Corda</h5>
+          <div class="meta">Séries: 3x15 Lento + 15 curto • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cables-cable-push-down-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Tríceps Unilateral na Polia Alta (Pegada Neutra)</h5>
+          <div class="meta">Séries: 3x15 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cables-cable-single-arm-rope-pushdown-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Crucifixo com Halteres</h5>
+          <div class="meta">Séries: 4x12 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-incline-chest-fly-front.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Crucifixo Inclinado com Halteres</h5>
+          <div class="meta">Séries: 4x12 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-incline-chest-flys-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Rosca Martelo com Halteres</h5>
+          <div class="meta">Séries: 4x12 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-hammer-curl-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+      </div></div>
+    </section>
+
+    <!-- Ombro e Costas -->
+    <section class="section sec-orange">
+      <button class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="badge">Treino</span>Ombro e Costas</div>
+        <span class="toggle">+</span>
+      </button>
+      <div class="section-body"><div class="grid">
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Puxada alta (pegada neutra)</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-machine-pulldown-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Abdominal Canivete</h5>
+          <div class="meta">Séries: 3x12 • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-dumbbell-suitcase-crunch-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Esteira Caminhada</h5>
+          <div class="meta">Séries: 40 reps</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Cardio-treadmill-walk-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Elevação Lateral Unilateral Sentado com Halteres</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-neutral-overhead-press-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Elevação Frontal Alternada</h5>
+          <div class="meta">Séries: 3x12 • Carga: 4 a 6kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-Dumbbells-dumbbell-front-raise-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Desenvolvimento com Halteres (Pegada Neutra)</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/dumbbells/_1080/Neutral_Grip_DB_Press_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Puxada Neutra Triângulo</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/cables/_1080/Seated_Row_V_Grip_FR_1080.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Remada Baixa Triângulo</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-machine-seated-cable-row-front.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+        <article class="card" data-int="30">
+          <button class="check" onclick="toggleDone(event,this)">✔</button>
+          <h5>Puxada Aberta Barra Reta</h5>
+          <div class="meta">Séries: 3x10/8/6 (Drop) • Carga: 0kg • Intervalo: 30s</div>
+          <video controls playsinline src="https://media.musclewiki.com/media/uploads/videos/branded/female-machine-pulldown-side.mp4"></video>
+          <div class="row"><button class="btn ghost" onclick="openTimer(this)">⏱ Intervalo</button></div>
+        </article>
+
+      </div></div>
+    </section>
+  </main>
+
+  <!-- HISTÓRICO MODAL -->
+  <div id="historyModal" class="modal">
+    <div class="modal-inner">
+      <h3>Histórico semanal</h3>
+      <ul id="historyList" class="history-list"></ul>
+      <div class="modal-actions"><button class="btn" onclick="closeHistory()">Fechar</button></div>
+    </div>
+  </div>
+
+  <!-- TIMER MODAL -->
+  <div id="timerModal" class="modal">
+    <div class="modal-inner">
+      <h3 id="timerTitle">Intervalo</h3>
+      <div id="timerDisplay" class="timer-display">00:30</div>
+      <div class="timer-actions">
+        <button id="timerStartPause" class="btn">Iniciar</button>
+        <button id="timerConclude" class="btn secondary">Concluir</button>
+        <button id="timerCancel" class="btn danger">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+  <footer class="footer">© 2025 PERSONAL — Soft UI</footer>
+  <script src="script.js"></script>
+</body>
+</html>
